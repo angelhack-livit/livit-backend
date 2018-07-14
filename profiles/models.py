@@ -32,7 +32,7 @@ class UserProfile(BaseUser):
 
 class Trainer(BaseUser):
 	age = models.IntegerField(default=0)
-	location = models.CharField(max_length=30)
+	location = models.CharField(max_length=200)
 	expertise = TaggableManager()
 
 	def __str__(self):

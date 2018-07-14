@@ -17,10 +17,14 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework import routers, serializers, viewsets
 from profiles.views import UserViewSet, TrainerViewset
+from workouts.views import WorkoutViewSet, TrainingSessionViewset
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'trainers', TrainerViewset)
+router.register(r'workouts', WorkoutViewSet)
+router.register(r'training_sessions', TrainingSessionViewset)
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),

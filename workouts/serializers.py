@@ -1,4 +1,4 @@
-from workout.models import Workout, TrainingSession
+from workouts.models import Workout, TrainingSession
 from rest_framework import serializers
 
 
