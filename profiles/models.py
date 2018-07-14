@@ -23,7 +23,7 @@ class UserProfile(BaseUser):
 	height = models.FloatField(default=0, null=True)
 	weight = models.FloatField(default=0, null=True)
 	age = models.IntegerField(default=0)
-	location = models.CharField(max_length=30)
+	location = models.CharField(max_length=200)
 	bio = models.TextField()
 
 	def __str__(self):
