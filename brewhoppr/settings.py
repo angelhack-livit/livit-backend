@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.gis',
     'easy_thumbnails',
     'rest_framework',
+    'taggit',
     # 'storages',
     'profiles',
     'workouts'
@@ -136,8 +137,8 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 import dj_database_url
-# DATABASES['default'] =  dj_database_url.config()
-# DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+DATABASES['default'] =  dj_database_url.config()
+DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 
 
 

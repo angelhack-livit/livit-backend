@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
-
+from taggit.managers import TaggableManager
 
 
 class BaseUser(models.Model):
@@ -32,7 +32,7 @@ class UserProfile(BaseUser):
 class Trainer(BaseUser):
 	age = models.IntegerField(default=0)
 	location = models.CharField(max_length=30)
-	# certifcations = models.CharField()
+	expertise = TaggableManager()
 
 	def __str__(self):
 		return self.email
