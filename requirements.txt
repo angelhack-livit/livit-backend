@@ -1,6 +1,8 @@
 appnope==0.1.0
 backports.shutil-get-terminal-size==1.0.0
 boto==2.45.0
+certifi==2018.4.16
+chardet==3.0.4
 decorator==4.0.10
 dj-database-url==0.4.0
 Django==1.9.2
@@ -14,6 +16,7 @@ djangorestframework==3.4.6
 easy-thumbnails==2.3
 gnureadline==6.3.3
 gunicorn==19.4.5
+idna==2.7
 ipdb==0.10.1
 ipython==4.2.1
 ipython-genutils==0.1.0
@@ -27,7 +30,9 @@ psycopg2==2.7.4
 psycopg2-binary==2.7.4
 ptyprocess==0.5.1
 python-dateutil==2.6.0
+requests==2.19.1
 simplegeneric==0.8.1
 six==1.10.0
 traitlets==4.2.2
+urllib3==1.23
 whitenoise==2.0.6
