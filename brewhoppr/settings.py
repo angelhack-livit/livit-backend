@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'easy_thumbnails',
     'rest_framework',
     'taggit',
+    'taggit_serializer',
     # 'storages',
     'profiles',
     'workouts'

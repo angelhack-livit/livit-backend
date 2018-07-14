@@ -6,6 +6,7 @@ from taggit.managers import TaggableManager
 
 
 class BaseUser(models.Model):
+    image_url = models.URLField(null=True)
     username = models.CharField(max_length=200, null=True)
     email = models.EmailField(max_length=255, blank=False, null=False, unique=True)
     first_name = models.CharField(max_length=100, blank=True, default="")
