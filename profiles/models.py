@@ -27,7 +27,7 @@ class UserProfile(BaseUser):
 	bio = models.TextField()
 
 	def __str__(self):
-		return self.email
+		return u'%s' % self.username
 
 
 class Trainer(BaseUser):
@@ -36,7 +36,7 @@ class Trainer(BaseUser):
 	expertise = TaggableManager()
 
 	def __str__(self):
-		return self.email
+		return u'%s' % self.username
 
 
 

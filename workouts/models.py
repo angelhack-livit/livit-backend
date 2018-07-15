@@ -15,22 +15,22 @@ class Workout(models.Model):
 	name = models.CharField(max_length=200)
 	description = models.TextField()
 	video_link = models.URLField(null=True, default=None)
-	level = models.CharField(max_length=9,
-	                  choices=LEVEL_CHOICES,
-	                  default=1)
+	level = models.IntegerField(choices=LEVEL_CHOICES,
+	                  			default=1)
 
-	def __str__(self):
+	def __unicode__(self):
 		return self.name
 
 
 class TrainingSession(models.Model):
 	name = models.CharField(max_length=200)
 	description = models.TextField()
-	start_date = models.DateTimeField(default=None)
-	end_date = models.DateTimeField(default=None)
-	trainer = models.ForeignKey(Trainer)
+	start_date = models.DateTimeField()
+	end_date = models.DateTimeField()
+	trainer = models.ForeignKey(Trainer, null=True)
 	users = models.ManyToManyField(UserProfile)
 	workouts = models.ManyToManyField(Workout)
+	back_ground_image = models.URLField(default=None, null=True)
 
-	def __str__(self):
+	def __unicode__(self):
 		return self.name
