@@ -12,7 +12,7 @@ django-floppyforms==1.7.0
 django-storages==1.5.1
 django-taggit==0.22.2
 django-taggit-serializer==0.1.7
-djangorestframework==3.4.6
+djangorestframework==3.9.1
 easy-thumbnails==2.3
 gnureadline==6.3.3
 gunicorn==19.4.5
